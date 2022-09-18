@@ -17,6 +17,31 @@ namespace theFoodCampus.Controllers
         {
             return View();
         }
+        public IActionResult about ()
+        {
+            return View();
+        }
+
+        public IActionResult Blogpost()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult Elements()
+        {
+            return View();
+        }
+
+
+        public IActionResult Recipepost ()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
