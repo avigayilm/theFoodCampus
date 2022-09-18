@@ -83,16 +83,16 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="home/index">Home</a></li>
+                                    <li class="active"><a href="@Url.Action("Index", "Home")">Index</a></li>
                                     <li>
                                         <a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a asp-action="index">Home</a></li>
-                                            <li><a asp-action="about">About Us</a></li>
-                                            <li><a asp-action="blogpost">Blog Post</a></li>
-                                            <li><a asp-action="recipepost">Receipe Post</a></li>
-                                            <li><a asp-action="contact">Contact</a></li>
-                                            <li><a asp-action="elements">Elements</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")">Index</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")" >about</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")">Blog Post</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")">Receipe Post</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")">Contact</a></li>
+                                            <li><a href="@Url.Action("Index", "Home")">Elements</a></li>
                                             <li>
                                                 <a href="#">Dropdown</a>
                                                 <ul class="dropdown">
@@ -118,8 +118,26 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Mega Menu</a>
-                                        <div class="megamenu">
+                                        <a href="#">Recipes</a>
+                                        <div class="Recipes">
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Holiday</li>
+                                                <li><a href="home/index">Home</a></li>
+                                                <li><a href="home/about">About Us</a></li>
+                                                <li><a href="home/blogpost">Blog Post</a></li>
+                                                <li><a href="home/recipepost">Receipe Post</a></li>
+                                                <li><a href="home/contact">Contact</a></li>
+                                                <li><a href="home/elements">Elements</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li class="title">Budget</li>
+                                                <li><a href="home/index">Home</a></li>
+                                                <li><a href="home/about">About Us</a></li>
+                                                <li><a href="home/blog-post">Blog Post</a></li>
+                                                <li><a href="home/recipepost">Receipe Post</a></li>
+                                                <li><a href="home/contact">Contact</a></li>
+                                                <li><a href="home/elements">Elements</a></li>
+                                            </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagory</li>
                                                 <li><a href="home/index">Home</a></li>
@@ -130,16 +148,16 @@
                                                 <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagory</li>
+                                                <li class="title">Holiday</li>
                                                 <li><a href="home/index">Home</a></li>
                                                 <li><a href="home/about">About Us</a></li>
-                                                <li><a href="home/blog-post">Blog Post</a></li>
+                                                <li><a href="home/blogpost">Blog Post</a></li>
                                                 <li><a href="home/recipepost">Receipe Post</a></li>
                                                 <li><a href="home/contact">Contact</a></li>
                                                 <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li class="title">Catagory</li>
+                                                <li class="title">Holiday</li>
                                                 <li><a href="home/index">Home</a></li>
                                                 <li><a href="home/about">About Us</a></li>
                                                 <li><a href="home/blogpost">Blog Post</a></li>
