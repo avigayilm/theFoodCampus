@@ -10,15 +10,16 @@
 
     <title>Delicious - Food Blog Template | Home</title>
    @* <title>@ViewData["Title"] - theFoodCampus</title>*@
-  @*  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/theFoodCampus.styles.css" asp-append-version="true" />*@
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="~/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="~/style.css">
 </head>
 <body>
     <!-- ##### Header Area Start ##### -->
@@ -64,7 +65,7 @@
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        <a class="nav-brand" href="index"><img src="~/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -82,34 +83,34 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="home/index">Home</a></li>
                                     <li>
                                         <a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="blog-post.html">Blog Post</a></li>
-                                            <li><a href="receipe-post.html">Receipe Post</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
+                                            <li><a asp-action="index">Home</a></li>
+                                            <li><a asp-action="about">About Us</a></li>
+                                            <li><a asp-action="blogpost">Blog Post</a></li>
+                                            <li><a asp-action="recipepost">Receipe Post</a></li>
+                                            <li><a asp-action="contact">Contact</a></li>
+                                            <li><a asp-action="elements">Elements</a></li>
                                             <li>
                                                 <a href="#">Dropdown</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="blog-post.html">Blog Post</a></li>
-                                                    <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                    <li><a href="elements.html">Elements</a></li>
+                                                    <li><a href="home/index">Home</a></li>
+                                                    <li><a href="home/about">About Us</a></li>
+                                                    <li><a href="home/blog-post">Blog Post</a></li>
+                                                    <li><a href="home/recipepost">Receipe Post</a></li>
+                                                    <li><a href="home/contact">Contact</a></li>
+                                                    <li><a href="home/elements">Elements</a></li>
                                                     <li>
                                                         <a href="#">Dropdown</a>
                                                         <ul class="dropdown">
-                                                            <li><a href="index.html">Home</a></li>
-                                                            <li><a href="about.html">About Us</a></li>
-                                                            <li><a href="blog-post.html">Blog Post</a></li>
-                                                            <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                            <li><a href="contact.html">Contact</a></li>
-                                                            <li><a href="elements.html">Elements</a></li>
+                                                            <li><a href="home/index">Home</a></li>
+                                                            <li><a href="home/about">About Us</a></li>
+                                                            <li><a href="home/blogpost">Blog Post</a></li>
+                                                            <li><a href="home/recipepost">Receipe Post</a></li>
+                                                            <li><a href="home/contact">Contact</a></li>
+                                                            <li><a href="home/elements">Elements</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -121,30 +122,30 @@
                                         <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
+                                                <li><a href="home/index">Home</a></li>
+                                                <li><a href="home/about">About Us</a></li>
+                                                <li><a href="home/blogpost">Blog Post</a></li>
+                                                <li><a href="home/recipepost">Receipe Post</a></li>
+                                                <li><a href="home/contact">Contact</a></li>
+                                                <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
+                                                <li><a href="home/index">Home</a></li>
+                                                <li><a href="home/about">About Us</a></li>
+                                                <li><a href="home/blog-post">Blog Post</a></li>
+                                                <li><a href="home/recipepost">Receipe Post</a></li>
+                                                <li><a href="home/contact">Contact</a></li>
+                                                <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagory</li>
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="blog-post.html">Blog Post</a></li>
-                                                <li><a href="receipe-post.html">Receipe Post</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                                <li><a href="elements.html">Elements</a></li>
+                                                <li><a href="home/index">Home</a></li>
+                                                <li><a href="home/about">About Us</a></li>
+                                                <li><a href="home/blogpost">Blog Post</a></li>
+                                                <li><a href="home/recipepost">Receipe Post</a></li>
+                                                <li><a href="home/contact">Contact</a></li>
+                                                <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <div class="single-mega cn-col-4">
                                                 <div class="receipe-slider owl-carousel">
@@ -154,9 +155,9 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="receipe-post.html">Receipies</a></li>
-                                    <li><a href="receipe-post.html">4 Vegans</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="home/recipepost">Receipies</a></li>
+                                    <li><a href="home/recipepost">4 Vegans</a></li>
+                                    <li><a href="home/contact">Contact</a></li>
                                 </ul>
 
                                 <!-- Newsletter Form -->
@@ -196,7 +197,7 @@
                     </div>
                     <!-- Footer Logo -->
                     <div class="footer-logo">
-                        <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="home/index"><img src="img/core-img/logo.png" alt=""></a>
                     </div>
                     <!-- Copywrite -->
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -215,14 +216,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- ##### Footer Area Start ##### -->
     <!-- ##### All Javascript Files ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="~/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="~/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="~/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="js/plugins/plugins.js"></script>
+    <script src="~/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="~/js/active.js"></script>
 </body>
 </html>

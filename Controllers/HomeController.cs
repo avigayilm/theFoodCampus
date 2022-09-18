@@ -17,7 +17,7 @@ namespace theFoodCampus.Controllers
         {
             return View();
         }
-        public IActionResult about ()
+        public IActionResult about()
         {
             return View();
         }
