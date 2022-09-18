@@ -9,9 +9,9 @@
 
 
     <title>Delicious - Food Blog Template | Home</title>
-   @* <title>@ViewData["Title"] - theFoodCampus</title>*@
+    @* <title>@ViewData["Title"] - theFoodCampus</title>*@
 
-@*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/theFoodCampus.styles.css" asp-append-version="true" />*@
 
@@ -83,16 +83,16 @@
                             <!-- Nav Start -->
                             <div class="classynav">
                                 <ul>
-                                    <li class="active"><a href="@Url.Action("Index", "Home")">Index</a></li>
+                                    <li class="active"><a href="home/index">Home</a></li>
                                     <li>
                                         <a href="#">Pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="@Url.Action("Index", "Home")">Index</a></li>
-                                            <li><a href="@Url.Action("Index", "Home")" >about</a></li>
-                                            <li><a href="@Url.Action("Index", "Home")">Blog Post</a></li>
-                                            <li><a href="@Url.Action("Index", "Home")">Receipe Post</a></li>
-                                            <li><a href="@Url.Action("Index", "Home")">Contact</a></li>
-                                            <li><a href="@Url.Action("Index", "Home")">Elements</a></li>
+                                            <li><a asp-action="index">Home</a></li>
+                                            <li><a asp-action="about">About Us</a></li>
+                                            <li><a asp-action="blogpost">Blog Post</a></li>
+                                            <li><a asp-action="recipepost">Receipe Post</a></li>
+                                            <li><a asp-action="contact">Contact</a></li>
+                                            <li><a asp-action="elements">Elements</a></li>
                                             <li>
                                                 <a href="#">Dropdown</a>
                                                 <ul class="dropdown">
@@ -118,26 +118,8 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Recipes</a>
-                                        <div class="Recipes">
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Holiday</li>
-                                                <li><a href="home/index">Home</a></li>
-                                                <li><a href="home/about">About Us</a></li>
-                                                <li><a href="home/blogpost">Blog Post</a></li>
-                                                <li><a href="home/recipepost">Receipe Post</a></li>
-                                                <li><a href="home/contact">Contact</a></li>
-                                                <li><a href="home/elements">Elements</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li class="title">Budget</li>
-                                                <li><a href="home/index">Home</a></li>
-                                                <li><a href="home/about">About Us</a></li>
-                                                <li><a href="home/blog-post">Blog Post</a></li>
-                                                <li><a href="home/recipepost">Receipe Post</a></li>
-                                                <li><a href="home/contact">Contact</a></li>
-                                                <li><a href="home/elements">Elements</a></li>
-                                            </ul>
+                                        <a href="#">Mega Menu</a>
+                                        <div class="megamenu">
                                             <ul class="single-mega cn-col-4">
                                                 <li class="title">Catagory</li>
                                                 <li><a href="home/index">Home</a></li>
@@ -148,16 +130,16 @@
                                                 <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li class="title">Holiday</li>
+                                                <li class="title">Catagory</li>
                                                 <li><a href="home/index">Home</a></li>
                                                 <li><a href="home/about">About Us</a></li>
-                                                <li><a href="home/blogpost">Blog Post</a></li>
+                                                <li><a href="home/blog-post">Blog Post</a></li>
                                                 <li><a href="home/recipepost">Receipe Post</a></li>
                                                 <li><a href="home/contact">Contact</a></li>
                                                 <li><a href="home/elements">Elements</a></li>
                                             </ul>
                                             <ul class="single-mega cn-col-4">
-                                                <li class="title">Holiday</li>
+                                                <li class="title">Catagory</li>
                                                 <li><a href="home/index">Home</a></li>
                                                 <li><a href="home/about">About Us</a></li>
                                                 <li><a href="home/blogpost">Blog Post</a></li>
@@ -199,7 +181,7 @@
         </main>
     </div>
 
-     <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
         <div class="container h-100">
             <div class="row h-100">
@@ -218,9 +200,11 @@
                         <a href="home/index"><img src="img/core-img/logo.png" alt=""></a>
                     </div>
                     <!-- Copywrite -->
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
         </div>
