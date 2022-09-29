@@ -1,8 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "ImaggaFail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- ##### Hero Area Start ##### -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-container">
+    <div class="w3-panel w3-red">
+        <h3>ERROR!</h3>
+        <p>your image does not match. Try again:) </p>
+    </div>
+
+</body>
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
         <!-- Single Hero Slide -->
@@ -90,7 +100,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="section-heading">
-                    <h3>Our Most Relevant</h3>
+                    <h3>The best Receipies</h3>
                 </div>
             </div>
         </div>
@@ -221,11 +231,8 @@
                 <!-- Cta Content -->
                 <div class="cta-content text-center">
                     <h2>
-                        @ViewBag.holiday
+                        @ViewBag.result
                     </h2>
-                    <h3>
-                        @ViewBag.weather
-                    </h3>
                     <p>Fusce nec ante vitae lacus aliquet vulputate. Donec scelerisque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras sed accumsan neque. Ut vulputate, lectus vel aliquam congue, risus leo elementum nibh</p>
                     <a href="#" class="btn delicious-btn">Discover all the receipies</a>
                 </div>
@@ -275,7 +282,7 @@
                     <div class="receipe-content">
                         <span>January 04, 2018</span>
                         <a href="receipe-post.html">
-                            <h5>Bakedd Bread</h5>
+                            <h5>Baked Bread</h5>
                         </a>
                         <div class="ratings">
                             <i class="fa fa-star" aria-hidden="true"></i>
@@ -467,13 +474,40 @@
     </div>
 </section>
 
-<hr/>
-<form action="CheckImage" method="get">
+<hr />
+<form action="Home/CheckImage" method="get">
     <input type="text" name="Title" required>Title</input>
-    <input type="text" name="ImageURL" required >Image</input>
+    <input type="text" name="ImageURL" required>Image</input>
     <button type="submit" id="btnImagga">upload my image</button>
 </form>
-<hr/>
+@*@if (ViewBag.ImaggaResult == "true")
+{
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body class="w3-container">
+
+
+        <div class="w3-panel w3-red">
+            <h3>Danger!</h3>
+            <p>Red often indicates a dangerous or negative situation.</p>
+        </div>
+
+    </body>
+}
+@if (ViewBag.ImaggaResult == "false")
+{
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body class="w3-container w3-auto">
+
+        <div class="w3-panel w3-green">
+            <h3>Success!</h3>
+            <p>Green often indicates something successful or positive.</p>
+        </div>
+
+    </body>
+}*@
+<hr />
 
 <!-- ##### Small Receipe Area End ##### -->
 <!-- ##### Quote Subscribe Area Start ##### -->
@@ -517,83 +551,3 @@
         </div>
     </div>
 </section>
-
-
-
-<!-- ##### Quote Subscribe Area End ##### -->
-@*<!-- ##### Follow Us Instagram Area Start ##### -->
-<div class="follow-us-instagram">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h5>Follow Us Instragram</h5>
-            </div>
-        </div>
-    </div>
-    <!-- Instagram Feeds -->
-    <div class="insta-feeds d-flex flex-wrap">
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta1.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta2.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta3.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta4.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta5.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta6.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta7.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Follow Us Instagram Area End ##### -->*@

@@ -18,8 +18,6 @@ namespace theFoodCampus.Controllers
         {
             _logger = logger;
         }
-
-       // [HttpGet{"{parameter 1 of html}/{paramter2 from html}]
         public IActionResult Index()// if youu read from html file you write in the parameter of index[] HebData The Data
         {
             var HebCalModel = new HebCalAdapter();// this gets the string from the gateway. 
