@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using theFoodCampus.Models;
+//using FireBase.Database;
+using Firebase.Database.Query;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace theFoodCampus.Controllers
 {
@@ -17,6 +21,7 @@ namespace theFoodCampus.Controllers
             var CurrentModel = new HebCalAdapter();// this gets the string from the gateway. 
             //gateway has to be running in order for this to work.
             var result = CurrentModel.Check();// if you have parameters  you put the parameters in check, best ot have it in models as an object the parameters you need
+
             ViewBag.result=result;
             return View();
         }
