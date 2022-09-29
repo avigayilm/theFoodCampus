@@ -1,8 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "ImaggaSuccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- ##### Hero Area Start ##### -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-container w3-auto">
+
+    <div class="w3-panel w3-green">
+        <h3>Success!</h3>
+        <p>your image was gr8!</p>
+    </div>
+
+</body>
 <section class="hero-area">
     <div class="hero-slides owl-carousel">
         <!-- Single Hero Slide -->
@@ -464,13 +475,13 @@
     </div>
 </section>
 
-<hr/>
-<form action="CheckImage" method="get">
+<hr />
+<form action="Home/CheckImage" method="get">
     <input type="text" name="Title" required>Title</input>
-    <input type="text" name="ImageURL" required >Image</input>
+    <input type="text" name="ImageURL" required>Image</input>
     <button type="submit" id="btnImagga">upload my image</button>
 </form>
-<hr/>
+<hr />
 
 <!-- ##### Small Receipe Area End ##### -->
 <!-- ##### Quote Subscribe Area Start ##### -->
@@ -514,83 +525,3 @@
         </div>
     </div>
 </section>
-
-
-
-<!-- ##### Quote Subscribe Area End ##### -->
-@*<!-- ##### Follow Us Instagram Area Start ##### -->
-<div class="follow-us-instagram">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h5>Follow Us Instragram</h5>
-            </div>
-        </div>
-    </div>
-    <!-- Instagram Feeds -->
-    <div class="insta-feeds d-flex flex-wrap">
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta1.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta2.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta3.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta4.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta5.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta6.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Insta Feeds -->
-        <div class="single-insta-feeds">
-            <img src="~/img/bg-img/insta7.jpg" alt="">
-            <!-- Icon -->
-            <div class="insta-icon">
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Follow Us Instagram Area End ##### -->*@
