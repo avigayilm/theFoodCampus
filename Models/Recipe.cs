@@ -11,7 +11,7 @@ namespace theFoodCampus.Models
     public class Recipe
     {
 
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Title { get; set; }
 
         [DisplayName("Descrption")]
